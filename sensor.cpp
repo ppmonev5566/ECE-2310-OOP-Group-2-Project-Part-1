@@ -17,16 +17,16 @@ void Sensor::setData(string ts, string co, string humidity, string light, string
 }
 
 void Sensor::toCelsius(){
-    if(!celcius){
+    if(!celsius){
         temperature = (temperature - 32) * 5.0/9.0;
-        celcius = true;
+        celsius = true;
     }
 }
 
 void Sensor::toFahrenheit(){
-    if(celcius){
+    if(celsius){
         temperature = (temperature * 9.0/5.0) + 32;
-        celcius = false;
+        celsius = false;
     }
 }
 

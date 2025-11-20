@@ -15,7 +15,7 @@ class Sensor {
     string motion;
     string smoke;
     double temperature;
-    bool celcius = true;
+    bool celsius = true;
 
     public:
         Sensor(string id);
